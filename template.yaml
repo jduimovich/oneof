@@ -37,7 +37,7 @@ spec:
                   title: commonHost
                   type: string
                   default: github.com
-                  ui:help: "The default should match what you see in ghHost"
+                  ui:help: "The default value should be github.com in both ghHost and commonHost"
             - required:
                 - glHost
                 - commonHost  
@@ -52,7 +52,7 @@ spec:
                   title: commonHost
                   type: string
                   default: gitlab.com     
-                  ui:help: "The default should match what you see in glHost"
+                  ui:help: "The default value should be gitlab.com in both glHost and commonHost"
             - required:
                 - bbHost
                 - commonHost  
@@ -67,7 +67,7 @@ spec:
                   title: commonHost
                   type: string
                   default: bitbucket.org        
-                  ui:help: "The default should match what you see in bbHost"
+                  ui:help: "The default value should be bitbucket.org in both bbHost and commonHost" 
   steps:
     - id: demo-wait-
       name: Waiting for demo
