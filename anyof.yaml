@@ -24,10 +24,7 @@ spec:
       dependencies:
         hostType:
           anyOf:
-            - required:
-                - ghHost
-                - commonHost 
-              properties:
+            - properties:
                 hostType:
                   const: GitHub    
                 ghHost:
@@ -39,10 +36,7 @@ spec:
                   type: string
                   default: github.com
                   ui:help: "Github: The default value should be github.com in both ghHost and commonHost"
-            - required:
-                - glHost
-                - commonHost  
-              properties:
+            - properties:
                 hostType:
                     const: GitLab   
                 glHost:
@@ -54,10 +48,7 @@ spec:
                   type: string
                   default: gitlab.com     
                   ui:help: "GitLab: The default value should be gitlab.com in both glHost and commonHost"
-            - required:
-                - bbHost
-                - commonHost  
-              properties:
+            - properties:
                 hostType:
                     const: Bitbucket   
                 bbHost:
