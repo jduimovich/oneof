@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: demo-any-of 
-  title:  Bug in One Of
+  title:  Any Of Behavior
   description: Bug Demo 
   tags: ["bug"]
 spec:
