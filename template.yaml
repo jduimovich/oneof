@@ -36,7 +36,8 @@ spec:
                 commonHost:
                   title: commonHost
                   type: string
-                  default: github.com  
+                  default: github.com
+                  ui:help: "The default should match what you see in ghHost"
             - required:
                 - glHost
                 - commonHost  
@@ -44,13 +45,14 @@ spec:
                 hostType:
                     const: GitLab   
                 glHost:
-                  title: Repository Server
+                  title: glHost
                   type: string
                   default: gitlab.com
                 commonHost:
                   title: commonHost
                   type: string
                   default: gitlab.com     
+                  ui:help: "The default should match what you see in glHost"
             - required:
                 - bbHost
                 - commonHost  
@@ -58,13 +60,14 @@ spec:
                 hostType:
                     const: Bitbucket   
                 bbHost:
-                  title: Repository Server
+                  title: bbHost
                   type: string
                   default: bitbucket.org  
                 commonHost:
                   title: commonHost
                   type: string
                   default: bitbucket.org        
+                  ui:help: "The default should match what you see in bbHost"
   steps:
     - id: demo-wait-
       name: Waiting for demo
