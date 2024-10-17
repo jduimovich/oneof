@@ -11,16 +11,16 @@ spec:
     - title: Choose One Of
       required:
         - hostType  
-      properties:
-        hostType:
-          title: Host Type
-          type: string
-          enum:
-            - GitHub
-            - GitLab
-            - Bitbucket
-          default: GitHub 
       dependencies:
+        properties:
+          hostType:
+            title: Host Type
+            type: string
+            enum:
+              - GitHub
+              - GitLab
+              - Bitbucket
+            default: GitHub 
         hostType:
           anyOf:
             - required:
