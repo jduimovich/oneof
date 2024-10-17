@@ -22,7 +22,7 @@ spec:
           default: GitHub 
       dependencies:
         hostType:
-          anyOf:
+          oneOf:
             - required:
                 - ghHost
                 - commonHost 
